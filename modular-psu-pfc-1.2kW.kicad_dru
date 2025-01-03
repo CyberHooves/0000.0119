@@ -1,0 +1,18 @@
+(version 1.0)
+
+# 0.5mm clearance between each other, 2mm to everything else
+(rule "HT1_group"
+	(condition "A.NetClass == 'HT1' && B.NetClass == 'HT1'")
+	(constraint clearance (min 0.5mm)))
+
+(rule "Vsense"
+	(condition "A.NetClass == 'HT' && B.NetClass == 'LV1'" )
+	(constraint clearance (min 0.75mm)))
+
+(rule "Inter_L"
+	(condition "A.NetClass == 'LINE' && B.NetClass == 'LINE'")
+	(constraint clearance (min 0.5mm)))
+
+(rule "Inter_N"
+	(condition "A.NetClass == 'NEUTRAL' && B.NetClass == 'NEUTRAL'")
+	(constraint clearance (min 0.5mm)))

@@ -1,0 +1,9 @@
+HAOS REDRO PN: 0000.0109
+
+Description:
+============
+
+This is a configurable single-phase PFC booster for up to 1.2kW loads, intended for use as a front end to switchmode power supplies. The output voltage is 400V DC. An auxiliary 12V supply referenced to the negative (400V return) output is provided for powering downstream converters. This module is designed with a 35mm vertical profile to be installed within 1U rack-mounting cases.
+
+An open-collector "power good" output is provided to indicate that the booster is switching. This should be used to disable the connected load(s) should the booster stop switching, as this will likely be due to a fault condition.
+An active-low enable input is provided to disable the PFC booster in applications that require a standby mode.

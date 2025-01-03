@@ -1,0 +1,5 @@
+# no need to include the backups directory.
+*-backups
+
+# ...or the lock files.
+*.lck
